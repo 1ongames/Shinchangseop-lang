@@ -9,7 +9,7 @@ class Reboot:
         for line in code.splitlines():
             self.process_line(line)
 
-    def lang(code):
+    def lang(self, code):
         if '오늘도' in code:
             return 'import'
         if '메벤' in code:
@@ -20,7 +20,12 @@ class Reboot:
             return 'else'
         if '신김창섭' in code:
             return 'elif'
-        if '5천플' in code:
-            return '+'
-        if '5천마' in code:
-            return '-'
+        if '쌀먹' in code:
+            return 'print'
+        if '과징금' in code:
+            return 'while'
+        if '본섭' in code:
+            return 'for'
+        if '인장' in code:
+            return '#'
+    
