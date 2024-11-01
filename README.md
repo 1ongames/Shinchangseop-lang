@@ -1,2 +1,2 @@
-# Shin-lang
-신창섭 프로그래밍 언어
+# Shinchangseop-lang
+이 프로젝트는 rycont/umjunsik-lang에 영감을 받아 제작되었습니다.
