@@ -3,13 +3,18 @@ from run import Reboot2
 
 class Reboot:
     def __init__(self):
-        self.variables = {}
+        self.data = [0]*256
 
-    def execute(self, code):
-        for line in code.splitlines():
-            self.process_line(line)
+    def toNumber(self, code):
+        tokens = code.split(' ')
+        result = 1
+        for token in tokens:
+            num = (self.data[token.count('시') - 1] if token.count('시') else 0) + token.count('.') - token.count(',')
+            result *= num
+        return result
 
-    def lang(self, code):
+    @staticmethod
+    def lang(code):
         if '오늘도' in code:
             return 'import'
         if '메벤' in code:
@@ -28,4 +33,7 @@ class Reboot:
             return 'for'
         if '인장' in code:
             return '#'
+
+    def decode
+        if code = '':
     
