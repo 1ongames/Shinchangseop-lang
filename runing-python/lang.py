@@ -1,7 +1,9 @@
 import sys
-from run import Reboot2
+# TODO: 더 쉽게 사용할 수 있게
+# from run import Reboot2
 
 class Reboot:
+ # 여기부터   
     def __init__(self):
         self.data = [0]*256
 
@@ -13,6 +15,7 @@ class Reboot:
             result *= num
         return result
 
+# 여기까지 엄랭 코드
     @staticmethod
     def lang(code):
         if '오늘도' in code:
@@ -33,7 +36,13 @@ class Reboot:
             return 'for'
         if '인장' in code:
             return '#'
-
-    def decode
+# 여기는 엄랭 참고
+    def jungsanghwa(self, code)
         if code = '':
+            raise SyntaxError('코드가 없네 씨 발 년')
+        decode = self.lang(code)
+
+        if decode == 'import':
+            
+        
     
