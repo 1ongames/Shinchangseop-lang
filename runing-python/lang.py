@@ -39,7 +39,7 @@ class Reboot:
 # 여기는 엄랭 참고
     def jungsanghwa(self, code)
         if code = '':
-            raise SyntaxError('코드가 없네 씨 발 년')
+            raise SyntaxError('[오류]: 과징금 116억 인출')
         decode = self.lang(code)
 
         if decode == 'import':
